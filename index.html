@@ -5,24 +5,24 @@
 		<title>HTML Academy: Нёрдс</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="header">
 			<div class="container">
 				<div class="content-header">
-					<a class="header-logo">
+					<a class="header-logo" href="index.html">
 						<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип проекта «Нёрдс»">
-					</a> 
+						</a> 
 					<nav class="header-navigation">
 						<ul class="site-navigation-list">
-							<li class="site-navigation-item"><a class="site-navigation-link" href="studio.html">Студия</a></li>
-							<li class="site-navigation-item"><a class="site-navigation-link" href="clients.html">Клиенты</a></li>
-							<li class="site-navigation-item"><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
-							<li class="site-navigation-item"><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
+							<li class="site-navigation-item"><a class="site-navigation-link" href="studio.html" tabindex="0">Студия</a></li>
+							<li class="site-navigation-item"><a class="site-navigation-link" href="clients.html" tabindex="0">Клиенты</a></li>
+							<li class="site-navigation-item"><a class="site-navigation-link" href="catalog.html" tabindex="0">Магазин</a></li>
+							<li class="site-navigation-item"><a class="site-navigation-link" href="contacts.html" tabindex="0">Контакты</a></li>
 						</ul>
 					</nav>
-					<a href="cart.html" class="header-cart"> Корзина</a>
+					<a href="cart.html" class="header-cart">Корзина</a>
 				</div>
 			</div>
 		</header>
@@ -123,58 +123,56 @@
 		</main>
 
 		<footer class="main-footer">
-			<div class="footer-map">
-				<div class="container">
-				<aside class="footer-map-address">
-					<p class="address-title">Nёrds design studio</p>
-					<p class="address-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-					<p class="address-phone">тел. +7 (812) 275-75-75</p>
-					<button class="footer-map-address-button" value="Напишите нам">Напишите нам</button>
-				</aside>
+				<div class="footer-map">
+					<div class="container">
+						<aside class="footer-map-address">
+							<p class="address-title">Nёrds design studio</p>
+							<p class="address-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+							<a href="tel:+78122757575" class="address-phone">тел. +7 (812) 275-75-75</a>
+							<button class="footer-map-address-button" value="Напишите нам">Напишите нам</button>
+						</aside>
+					</div>
 				</div>
-			</div>
-
 			<div class="footer-box">
 				<div class="footer-box-social-button-text container">
 					<div class="footer-social">
 						<ul class="footer-social-list">
-							<li><a class="social-button social-button-vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-							<li><a class="social-button social-button-fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-							<li><a class="social-button social-button-insta" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+							<li><a class="social-button social-button-vk" href="#" aria-label="Вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
+							<li><a class="social-button social-button-fb" href="#" aria-label="Фейсбук"><span class="visually-hidden">Фейсбук</span></a></li>
+							<li><a class="social-button social-button-insta" href="#" aria-label="Инстаграм"><span class="visually-hidden">Инстаграм</span></a></li>
 						</ul>
 					</div>
-						<div class="footer-social-box">
-							<p class="footer-social-title">Давайте дружить, это выгодно!</p>
-							<p class="footer-social-text">Скидка 10% для друзей из социальных сетей.</p>
-						</div>
+				<div class="footer-social-box">
+					<p class="footer-social-title">Давайте дружить, это выгодно!</p>
+					<p class="footer-social-text">Скидка 10% для друзей из социальных сетей.</p>
+				</div>
 				</div>
 			</div>
 		</footer>
-
-			<div class="container">
-				<form class="user-popup" method="get" action="https://echo.htmlacademy.ru">
-					<fieldset class="user-popup-modal">
-						<legend class="user-popup-title">Напишите нам</legend>
-						<div class="user-popup-name-email">
-							<div class="user-popup-name-box">
-								<label for="user-popup-name">Ваше имя:</label>
-								<input type="text" name="name" id="user-popup-name" placeholder="Имя Фамилия"/>
+				<div class="container">
+					<form class="user-popup" method="get" action="https://echo.htmlacademy.ru">
+						<fieldset class="user-popup-modal">
+							<legend class="user-popup-title">Напишите нам</legend>
+							<div class="user-popup-name-email">
+								<div class="user-popup-name-box">
+									<label for="user-popup-name">Ваше имя:</label>
+									<input class="popup-name-focus" type="text" name="name" id="user-popup-name" placeholder="Имя Фамилия"/>
+								</div>
+								<div class="user-popup-email-box">
+									<label for="user-popup-email">Ваш e-mail:</label>
+									<input class="popup-email-focus" type="email" name="email" id="user-popup-email" placeholder="email@excample.com"/>
+								</div>
 							</div>
-							<div class="user-popup-email-box">
-								<label for="user-popup-email">Ваш e-mail:</label>
-								<input type="email" name="email" id="user-popup-email" placeholder="email@excample.com"/>
-							</div>
-						</div>
-							<div class="user-popup-сomment-box">
-								<label for="user-popup-сomment">Текст письма:</label>
-								<textarea name="сomment" id="user-popup-сomment" rows="4" placeholder="В свободной форме"></textarea>
-							</div>
+								<div class="user-popup-сomment-box">
+									<label for="user-popup-сomment">Текст письма:</label>
+									<textarea class="popup-textarea-focus" name="сomment" id="user-popup-сomment" rows="4" placeholder="В свободной форме"></textarea>
+								</div>
 								<button type="submit" class="footer-map-address-popup-button" value="Отправить">Отправить</button>
 								<button class="user-popup-cross" aria-label="Закрыть"></button>
 						</fieldset>
 					</form>
-				<div class="user-popup-overlay"></div>
-			</div>
-		<script src="js/popup.js"></script>
+					<div class="user-popup-overlay"></div>
+				</div>
+			<script src="js/popup.min.js"></script>
 	</body>
 </html>
