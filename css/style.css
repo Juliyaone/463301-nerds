@@ -803,23 +803,25 @@ img {
 
 .footer-map {
 	position: relative;
-	left: 50%;
-	margin-left: -720px;
+	margin: auto;
 	background: url("../img/img-map.jpg") no-repeat center top;
 	min-height: 416px;
 	width: 1440px;
 	border: 1px solid transparent;
 	margin-bottom: 70px;
+	z-index: 4;
 }
 
 .footer-map-address {
+	position: absolute;
+	top: 0;
 	background-color: white;
 	width: 319px;
 	height: 308px;
 	margin-top: 54px;
 	margin-bottom: 54px;
 	text-align: left;
-	z-index: 5;
+	z-index: 6;
 }
 
 .address-title {
@@ -906,6 +908,8 @@ img {
 	background-color: #d7373b;
 	color: #e37376;
 }
+
+
 .user-popup-modal input,
 .user-popup-modal textarea {
 	border: 2px solid #d7dcde;
@@ -925,7 +929,6 @@ img {
 
 .user-popup-modal {
 	border-style: none;
-	z-index: 10;
 }
 
 .user-popup-modal input {
@@ -975,31 +978,25 @@ input::-moz-placeholder {
 	opacity: 0.1;
 }
 
-fieldset.user-popup-modal {
-	margin: 0;
-	padding: 0;
-}
-
 .user-popup {
 	display: none;
 	position: fixed;
 	top: 250px;
 	left: 50%;
 	margin-left: -480px;
-
 	width: 961px;
 	min-height: 592px;
-
 	border: 1px solid white;
 	background-color: #ffffff;
 	-webkit-box-shadow: 0px 10px 50px 1px #000101;
 	        box-shadow: 0px 10px 50px 1px #000101;
-	padding: 0;
-	z-index: 10;
+	padding: 0;\
+	z-index: 12;
 }
 
 .modal-show {
 	display: block;
+	z-index: 12;
 	-webkit-animation-name: bounce;
 	        animation-name: bounce;
 	-webkit-animation-duration: 0.6s;
