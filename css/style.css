@@ -2006,6 +2006,9 @@ li:focus .catalog-item-preview::before {
 	padding-bottom: 15px;
 }
 
+iframe {
+	border: none;
+}
 
 
 
